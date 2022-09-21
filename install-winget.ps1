@@ -22,7 +22,7 @@ Function Install-WinGet {
     #if (-Not $requirement) {
      #   Write-Verbose "Installing Desktop App Installer requirement"
      #   Try {
-            Add-AppxPackage -Path "https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx" -erroraction Stop
+            Add-AppxPackage -Path "https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx"
       #  }
        # Catch {
          #   Throw $_
