@@ -18,16 +18,16 @@ Function Install-WinGet {
     }
 
     #test for requirement
-    $Requirement = Get-AppPackage "Microsoft.DesktopAppInstaller"
-    if (-Not $requirement) {
-        Write-Verbose "Installing Desktop App Installer requirement"
-        Try {
+    #$Requirement = Get-AppPackage "Microsoft.DesktopAppInstaller"
+    #if (-Not $requirement) {
+     #   Write-Verbose "Installing Desktop App Installer requirement"
+     #   Try {
             Add-AppxPackage -Path "https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx" -erroraction Stop
-        }
-        Catch {
-            Throw $_
-        }
-    }
+      #  }
+       # Catch {
+         #   Throw $_
+        #}
+    #}
 
     $uri = "https://api.github.com/repos/microsoft/winget-cli/releases"
 
