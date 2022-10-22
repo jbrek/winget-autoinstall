@@ -28,4 +28,5 @@ EXAMPLE UNATTEND.XML
 
 
 #ONELINER
+
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/jbrek/winget-autoinstall/main/install-winget.ps1'))
